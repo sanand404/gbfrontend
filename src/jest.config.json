@@ -1,0 +1,21 @@
+{
+  "preset": "jest-puppeteer",
+  "setup-files": ["<rootDir>/src/setupTests.js", "jest-canvas-mock"],
+  "test-match": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+  "plugins": ["rewire"],
+  "transformIgnorePattern": ["node_modules/(?!(date-fns/esm))"],
+  "collectCoverage": false,
+  "verbose": true,
+  "coverageReporters": ["Icovonly"],
+  "coverageDirectory": "test-coverage",
+  "coverageThreshold": {
+    "global": {
+      "branches": 0,
+      "functions": 0,
+      "lines": 0,
+      "statements": 0
+    }
+  },
+  "moduleDirectories": ["node_modues", "src"],
+  "snapshotSerializers": ["enzyme-to-json/serializer"]
+}

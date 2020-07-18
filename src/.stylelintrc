@@ -1,0 +1,25 @@
+{
+    "extends":[
+        "stylelint-config-recommended-scss",
+        "stylelint-config-prettier"
+    ],
+    "plugins": [
+        "stylelint-order"
+    ],
+    "rules":{
+        "block-opening-brace-space-before":"always",
+        "color-hex-case": "lower",
+        "color-hex-length": "long",
+        "selector-class-pattern":"^[0-9a-zA-Z\\-]+$",
+        "rule-empty-line-before":[
+            "always",
+            {
+                "except":[
+                    "after-single-line-comment",
+                    "first-nested"
+                ]
+            }
+        ],
+        "order/properties-alphabetical-order": true
+}
+}

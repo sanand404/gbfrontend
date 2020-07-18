@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing App Render as expected 1`] = `
+<div>
+  <h1>
+    Hi Shradha
+  </h1>
+</div>
+`;
